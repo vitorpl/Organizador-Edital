@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Organizador de Edital!
+  </h1>
+  <form #f="ngForm">
+    <textarea rows="10" cols="50" #textbox (change)="txt = textbox.value">
+{{text}}</textarea
+    >
+    <br />
+    Separador:
+    <input type="text" name="separador" [(ngModel)]="separador" />
+    <br />
+    <button (click)="processar()">Converter</button>
+    <br />
+    <span class="separador"
+      >Converter utilizadno o separador => {{separador}}</span
+    >
+  </form>
+  <p>Resultado:</p>
+  <ul>
+    <li *ngFor="let item of listaItens">{{item}}</li>
+  </ul>
+</div>
