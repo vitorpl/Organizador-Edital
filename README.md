@@ -1,2 +1,2 @@
 # Organizador-Edital
-Created with CodeSandbox
+Transforma um texto em uma lista através de um separador. Útil para organizar editais de concursos.
